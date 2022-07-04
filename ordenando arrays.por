@@ -16,7 +16,7 @@ inteiro vet[10]
         {
             para(contB = contA +1; contB <=9; contB++ )
             {
-                se(vet[contA] > vet[contB])
+                se(vet[contA] > vet[contB])// para alterar a ordem de crescente para decrescente basta alterar esta condição
                 {
                     aux = vet[contB]
                     vet[contB] = vet[contA]
