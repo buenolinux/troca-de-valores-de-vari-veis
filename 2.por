@@ -1,14 +1,14 @@
 programa {
 /*
-2.) Leia dois vetores A e B, com 10 números  em cada.
+2.) Leia dois vetores A e B, com 10 nÃºmeros  em cada.
 Crie o vetor C, 
 
-colocando em cada posição dele o resultado da soma dos valores das posições correspondentes em A e B.
-Na sequência, crie o vetor D, colocando nele o resultado da multiplicação de A por B.
+colocando em cada posiÃ§Ã£o dele o resultado da soma dos valores das posiÃ§Ãµes correspondentes em A e B.
+Na sequÃªncia, crie o vetor D, colocando nele o resultado da multiplicaÃ§Ã£o de A por B.
 
 No final, imprima na tela os valores armazenados no vetor C em ordem decrescente e os armazenados em D em ordem crescente.
 
-Dica: tente usar funções para realizar as ordenações.
+Dica: tente usar funÃ§Ãµes para realizar as ordenaÃ§Ãµes.
 */
 inteiro a[2], b[2],c[2],d[2], cont, cont2, bkp
   funcao inicio() {
@@ -35,9 +35,24 @@ inteiro a[2], b[2],c[2],d[2], cont, cont2, bkp
     }
     para (cont = 0; cont<2; cont++) {
         para (cont2 =  cont + 1;  cont2 < 2; cont2++){
-            se (c[cont] > c[cont2]){
-                bkp = c[cont]
-                c[cont] = c[cont2]
-                c[cont2] = bkp
-  }
+            se (d[cont] < d[cont2]){
+                bkp = d[cont]
+                d[cont] = d[cont2]
+                d[cont2] = bkp
+             }
+        }
+
+    }
+    para (cont = 0; cont<2; cont++) {
+        
+            escreva(d[cont]," ")
+    }
+
+    escreva("\n ")
+    para (cont = 0; cont<2; cont++) {
+        
+            escreva(c[cont]," ")
+    }
+
+}
 }
