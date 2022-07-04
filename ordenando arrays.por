@@ -1,19 +1,20 @@
 programa {
-// Algoritmo de troca de vari·veis
+// Algoritmo de troca de vari√°veis
 
 inteiro cont, aux, contA, contB
-inteiro vet[3]
+inteiro vet[10]
   funcao inicio() {
         // Preencher o arrary
-        para(cont=0; cont<=2; cont++)
+        para(cont=0; cont<=9; cont++)
         {
-            escreva("Digite um n˙mero: ")
+            escreva("Digite um n√∫mero: ")
             leia(vet[cont])
+            limpa()
         }
         // ordenar o array criado
-          para(contA=0; contA<=2; contA++)
+          para(contA=0; contA<=9; contA++)
         {
-            para(contB = contA +1; contB <=2; contB++ )
+            para(contB = contA +1; contB <=9; contB++ )
             {
                 se(vet[contA] > vet[contB])
                 {
@@ -25,9 +26,9 @@ inteiro vet[3]
             
         }
         // Exibir o array ordenado
-          para(cont=0; cont<=2; cont++)
+          para(cont=0; cont<=9; cont++)
         {
-            escreva("Digite um n˙mero: ")
+            escreva("Digite um n√∫mero: ")
             escreva(vet[cont], " \n")
         }
     }
