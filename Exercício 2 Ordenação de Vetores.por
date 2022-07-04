@@ -26,7 +26,7 @@ inteiro a[15], b[15],c[15],d[15], cont, cont2, bkp
     }
     para (cont = 0; cont<15; cont++) {
         para (cont2 =  cont + 1;  cont2 < 15; cont2++){
-            se (c[cont] > c[cont2]){
+            se (c[cont] < c[cont2]){
                 bkp = c[cont]
                 c[cont] = c[cont2]
                 c[cont2] = bkp
@@ -34,8 +34,8 @@ inteiro a[15], b[15],c[15],d[15], cont, cont2, bkp
         }
     }
     para (cont = 0; cont<15; cont++) {
-        para (cont2 =  cont + 1;  cont2 < 2; cont2++){
-            se (d[cont] < d[cont2]){
+        para (cont2 =  cont + 1;  cont2 < 15; cont2++){
+            se (d[cont] > d[cont2]){
                 bkp = d[cont]
                 d[cont] = d[cont2]
                 d[cont2] = bkp
@@ -43,15 +43,17 @@ inteiro a[15], b[15],c[15],d[15], cont, cont2, bkp
         }
 
     }
-    para (cont = 0; cont<15; cont++) {
-        
-            escreva(d[cont]," ")
-    }
+    
 
-    escreva("\n ")
+    
     para (cont = 0; cont<15; cont++) {
         
             escreva(c[cont]," ")
+    }
+    escreva("\n ")
+    para (cont = 0; cont<15; cont++) {
+        
+            escreva(d[cont]," ")
     }
 
 }
