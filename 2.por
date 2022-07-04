@@ -10,9 +10,9 @@ No final, imprima na tela os valores armazenados no vetor C em ordem decrescente
 
 Dica: tente usar funções para realizar as ordenações.
 */
-inteiro a[2], b[2],c[2],d[2], cont, cont2, bkp
+inteiro a[15], b[15],c[15],d[15], cont, cont2, bkp
   funcao inicio() {
-    para(cont=0; cont<2; cont++)
+    para(cont=0; cont<15; cont++)
     {
         escreva("Digite um valor  para o primeiro \n")
         leia(a[cont])
@@ -24,8 +24,8 @@ inteiro a[2], b[2],c[2],d[2], cont, cont2, bkp
         d[cont] = a[cont] * b[cont]
 
     }
-    para (cont = 0; cont<2; cont++) {
-        para (cont2 =  cont + 1;  cont2 < 2; cont2++){
+    para (cont = 0; cont<15; cont++) {
+        para (cont2 =  cont + 1;  cont2 < 15; cont2++){
             se (c[cont] > c[cont2]){
                 bkp = c[cont]
                 c[cont] = c[cont2]
@@ -33,7 +33,7 @@ inteiro a[2], b[2],c[2],d[2], cont, cont2, bkp
             }
         }
     }
-    para (cont = 0; cont<2; cont++) {
+    para (cont = 0; cont<15; cont++) {
         para (cont2 =  cont + 1;  cont2 < 2; cont2++){
             se (d[cont] < d[cont2]){
                 bkp = d[cont]
@@ -43,13 +43,13 @@ inteiro a[2], b[2],c[2],d[2], cont, cont2, bkp
         }
 
     }
-    para (cont = 0; cont<2; cont++) {
+    para (cont = 0; cont<15; cont++) {
         
             escreva(d[cont]," ")
     }
 
     escreva("\n ")
-    para (cont = 0; cont<2; cont++) {
+    para (cont = 0; cont<15; cont++) {
         
             escreva(c[cont]," ")
     }
