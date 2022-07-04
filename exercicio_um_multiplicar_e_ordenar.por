@@ -3,7 +3,7 @@ programa {
   funcao inicio() {
     para(cont=0; cont<=14; cont++)
     {
-        escreva("Digite um número \n")
+        escreva("Digite um nÃºmero \n")
         leia(vetor_numeros[cont])
         vetor_numeros2[cont]= vetor_numeros[cont] * 7
         limpa()
@@ -17,7 +17,13 @@ programa {
                 bkp = vetor_numeros2[cont2]
                 vetor_numeros2[cont2] = vetor_numeros2[cont]
                 vetor_numeros2[cont] = bkp
-            }        
+            }
+             se(vetor_numeros[cont2] > vetor_numeros[cont])
+              {
+                bkp                  = vetor_numeros[cont2]
+                vetor_numeros[cont2] = vetor_numeros[cont]
+                vetor_numeros[cont]  = bkp
+            }   
         }
     }
  
